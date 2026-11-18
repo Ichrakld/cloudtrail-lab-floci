@@ -1,0 +1,12 @@
+services:
+  floci:
+    image: ${FLOCI_IMAGE:-floci/floci:latest}
+    container_name: floci-cloudtrail
+    environment:
+      FLOCI_SERVICES_CLOUDTRAIL_ENABLED: "true"
+      FLOCI_SERVICES_CLOUDTRAIL_FLUSH_INTERVAL_SECONDS: "10"
+      FLOCI_SERVICES_IAM_ENFORCEMENT_ENABLED: "true"
+    ports:
+      - "127.0.0.1:4566:4566"
+    volumes:
+      - ./floci-data:/app/data

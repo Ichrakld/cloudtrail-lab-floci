@@ -1,0 +1,15 @@
+[
+  {
+    "ReadWriteType": "All",
+    "IncludeManagementEvents": true,
+    "DataResources": [
+      {
+        "Type": "AWS::S3::Object",
+        "Values": [
+          "arn:aws:s3:::corp-backups-prod/",
+          "arn:aws:s3:::corp-finance-secrets/"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+.env
+floci-data/
+data/collected-native/
+data/collected-synthetic/
+data/synthetic/
+data/synthetic-layout/
+data/scenarios/
+reports/*
+!reports/README.md
+evidence/native/*
+!evidence/native/README.md
+__pycache__/
+*.py[cod]
+.DS_Store
+.vscode/
+.idea/
